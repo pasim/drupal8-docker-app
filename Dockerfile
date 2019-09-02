@@ -2,6 +2,9 @@ FROM ubuntu:bionic
 MAINTAINER Ricardo Amaro <mail_at_ricardoamaro.com>
 ENV DEBIAN_FRONTEND noninteractive
 
+#ENV MYSQL_PWD Pwd123
+#RUN echo "mysql-server mysql-server/root_password password $MYSQL_PWD" | debconf-set-selections
+
 RUN apt-get update; \
   dpkg-divert --local --rename --add /sbin/initctl; \
   ln -sf /bin/true /sbin/initctl; \
