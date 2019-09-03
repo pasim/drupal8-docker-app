@@ -1,0 +1,10 @@
+To build the environment for devs tomorrow;
+
+“composer create-project drupal-composer/drupal-project:8.x-dev local --no-dev --no-interaction”
+
+Version 1: docker build -t ricardoamaro/drupal8 .
+Version 2: docker-compose up -d;
+
+Then log in and run /start.sh command.
+
+Modules to instal via composerl: devel webform admin_toolbar memcahe flag
