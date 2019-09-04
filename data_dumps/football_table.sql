@@ -9,4 +9,4 @@ CREATE TABLE `futbol_stats` (
   `city` varchar(40) DEFAULT NULL,
   `neutral` varchar(5) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=41159 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
