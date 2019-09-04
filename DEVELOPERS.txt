@@ -8,3 +8,5 @@ Version 2: docker-compose up -d;
 Then log in and run /start.sh command.
 
 Modules to instal via composerl: devel webform admin_toolbar memcahe flag
+
+Football data set to play arround with - https://www.kaggle.com/martj42/international-football-results-from-1872-to-2017
