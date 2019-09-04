@@ -18,3 +18,5 @@ SELECT * from `futbol_stats` where `city` = 'Kuala Lumpur'
 
 
 select `away_team`, COUNT(`id`) as apperances from `futbol_stats` where `home_team` = 'Belgium' GROUP BY `away_team`;
+
+select `away_team`, COUNT(`id`) as apperances, SUM(`home_score`) as h_score, SUM(`away_score`) as a_score from `futbol_stats` where `home_team` = 'Belgium' GROUP BY `away_team` ORDER BY apperances DESC;
