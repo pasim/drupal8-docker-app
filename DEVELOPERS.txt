@@ -15,3 +15,6 @@ Sample queries
 
 SELECT COUNT(id) as accurances, `city` from `futbol_stats` GROUP BY `city` HAVING accurances > 99 ORDER BY accurances DESC
 SELECT * from `futbol_stats` where `city` = 'Kuala Lumpur'
+
+
+select `away_team`, COUNT(`id`) as apperances from `futbol_stats` where `home_team` = 'Belgium' GROUP BY `away_team`;
