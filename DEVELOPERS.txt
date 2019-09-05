@@ -22,3 +22,5 @@ select `away_team`, COUNT(`id`) as apperances from `futbol_stats` where `home_te
 select `away_team`, COUNT(`id`) as apperances, SUM(`home_score`) as h_score, SUM(`away_score`) as a_score from `futbol_stats` where `home_team` = 'Belgium' GROUP BY `away_team` ORDER BY apperances DESC;
 
 SELECT COUNT(id) as accurances, `tournament` from `futbol_stats` GROUP BY `tournament` ORDER BY accurances DESC
+
+drush cim -y --partial --source=modules/path/to/module/config/install/
