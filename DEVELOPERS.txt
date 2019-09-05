@@ -23,7 +23,8 @@ select `away_team`, COUNT(`id`) as apperances, SUM(`home_score`) as h_score, SUM
 
 SELECT COUNT(id) as accurances, `tournament` from `futbol_stats` GROUP BY `tournament` ORDER BY accurances DESC
 
-drush cim -y --partial --source=modules/path/to/module/config/install/
+// Bellow Drush command will work from web/ folder inside your docker container
+drush cim -y --partial --source=modules/custom/traning/config/install/
 
 
 https://www.drupal.org/docs/8/api/configuration-api/configuration-schemametadata
