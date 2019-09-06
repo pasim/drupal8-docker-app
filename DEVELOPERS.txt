@@ -28,3 +28,27 @@ drush cim -y --partial --source=modules/custom/traning/config/install/
 
 
 https://www.drupal.org/docs/8/api/configuration-api/configuration-schemametadata
+
+Few good queries
+
+SELECT count(id) as games, city
+FROM drupal.futbol_stats
+group by city
+order by games desc;
+
+SELECT year(date) as year_palyed, count(id) as no_of_games FROM drupal.futbol_stats
+group by year_palyed;
+
+SELECT city, count(id) as number_of_games FROM drupal.futbol_stats
+where tournament='Friendly' 
+group by city
+order by number_of_games DESC;
+
+
+SELECT count(id) as games, tournament, 
+sum(home_score) as home_goals,
+sum(away_score) as away_goals,
+sum(home_score + away_score) as goals_total
+FROM drupal.futbol_stats
+group by tournament
+order by games DESC;
