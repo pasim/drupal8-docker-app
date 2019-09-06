@@ -60,7 +60,7 @@ if ( ! grep -q 'database.*=>.*drupal' ${DOCROOT}/sites/default/settings.php 2>/d
   cp sites/default/default.settings.php sites/default/settings.php
   ${DRUSH} site-install standard -y --account-name=admin --account-pass=admin \
            --db-url="mysql://drupal:${DRUPAL_PASSWORD}@localhost:3306/drupal" \
-           --site-name="Drupal8 docker App" | grep -v 'continue?' 2>/dev/null
+           --site-name="Drupal8 traningh application" | grep -v 'continue?' 2>/dev/null
   # TODO: move this to composer.json
   ${DRUSH} -y dl memcache >/dev/null 2>&1
   ${DRUSH} -y en memcache | grep -v 'continue?' | grep -v error 2>/dev/null
