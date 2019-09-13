@@ -52,3 +52,5 @@ sum(home_score + away_score) as goals_total
 FROM drupal.futbol_stats
 group by tournament
 order by games DESC;
+
+Data provided by https://www.kaggle.com/ma7555/schengen-visa-stats/version/2#
